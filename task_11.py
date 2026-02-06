@@ -14,7 +14,7 @@ has_upper_letter = any(char.isupper() for char in password)
 print(d)
 
 if (len(password) >= int(d["мин_длина"])
-        and has_digits 
+        and has_digits
         and has_upper_letter):
     print("Да")
 else:
