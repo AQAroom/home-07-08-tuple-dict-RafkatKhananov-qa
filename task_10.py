@@ -5,6 +5,8 @@ for i in range(N):
     key, value = input().split()
     d[key] = value
 
+input()
+
 M = int(input())
 for i in range(M):
     key, value = input().split()
