@@ -1,16 +1,18 @@
-d = {}
+d_1 = {}
+d_2 = {}
 
 N = int(input())
 for i in range(N):
-    line_1 = input()
-    key, value = line_1.split()
-    d[key] = value
+    key, value = input().split()
+    d_1[key] = value
 
 M = int(input())
 for i in range(M):
-    line_2 = input()
-    key, value = line_2.split()
-    d[key] = value
+    key, value = input().split()
+    d_2[key] = value
 
-for key, value in d.items():
-    print(f"{key}: {value}")
+for key in sorted(d_1):
+    print(f"{key}: {d_1[key]}")
+
+for key in sorted(d_2):
+    print(f"{key}: {d_2[key]}")
