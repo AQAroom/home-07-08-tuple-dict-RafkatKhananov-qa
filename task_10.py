@@ -12,5 +12,5 @@ for i in range(M):
     key, value = line_2.split()
     d[key] = value
 
-for key, value in sorted(d.items()):
+for key, value in d.items():
     print(f"{key}: {value}")
