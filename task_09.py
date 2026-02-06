@@ -9,4 +9,5 @@ for i in text:
         else:
             d[i] = 1
 
-print(d)
+for key, value in sorted(d.items()):
+    print(f"{key}: {value}")
