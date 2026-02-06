@@ -2,14 +2,15 @@ d = {}
 
 N = int(input())
 for i in range(N):
-    line = input()
-    key, value = line.split()
+    line_1 = input()
+    key, value = line_1.split()
     d[key] = value
 
 M = int(input())
 for i in range(M):
-    line = input()
-    key, value = line.split()
+    line_2 = input()
+    key, value = line_2.split()
     d[key] = value
 
-print(d)
+for key, value in sorted(d.items()):
+    print(f"{key}: {value}")
